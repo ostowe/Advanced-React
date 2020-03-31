@@ -1,0 +1,6 @@
+endpoint: https://us1.prisma.sh/owen-stowe/obs-advanced-react-wesbos/dev
+datamodel: datamodel.graphql
+# secret: ${env:PRISMA_SECRET}
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma
